@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f4f6f3;
+  color: #1f2a1f;
+}
+
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+h1 { margin: 0; font-size: 2.2rem; }
+.subtitle { margin: 4px 0 32px; color: #5b6b5b; }
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.card h2 { margin-top: 0; font-size: 1.1rem; }
+
+button {
+  border: none;
+  background: #2f6b3a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover { background: #24542d; }
+
+.counter { display: flex; align-items: center; gap: 16px; }
+.counter span { font-size: 1.6rem; min-width: 40px; text-align: center; }
+
+.todo-form { display: flex; gap: 8px; }
+.todo-form input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccd5cc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.todos { list-style: none; padding: 0; margin: 16px 0 0; }
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eef1ee;
+}
+.todos li label { display: flex; gap: 8px; align-items: center; }
+.todos li.done label { text-decoration: line-through; color: #8a978a; }
+.todos .empty { color: #8a978a; }
+.remove { background: transparent; color: #a33; padding: 4px 8px; }
+.remove:hover { background: #fbeaea; }
